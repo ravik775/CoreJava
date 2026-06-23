@@ -1,0 +1,108 @@
+
+MULTITHREADING INTERVIEW PREPARATION (JAVA)
+
+====================================================
+🔥 1. Top 30 Multithreading Coding Problems
+====================================================
+
+Basic Level (1–10)
+1. Print even/odd numbers using two threads
+2. Print numbers in sequence using 3 threads
+3. Thread creation (Thread vs Runnable)
+4. Producer–Consumer (wait/notify)
+5. sleep vs wait demo
+6. Print hello from multiple threads safely
+7. Thread-safe counter using synchronization
+8. volatile stop flag
+9. Thread join example
+10. Deadlock creation and fix
+
+Medium Level (11–20)
+11. Blocking queue implementation
+12. Thread-safe LRU cache
+13. Read-write lock
+14. Fibonacci using threads
+15. Alternating printing (ABC)
+16. Thread-safe Singleton
+17. Rate limiter
+18. Dining philosophers
+19. Thread-safe stack
+20. Parallel array sum
+
+Advanced Level (21–30)
+21. Custom thread pool
+22. ForkJoin example
+23. Concurrent hashmap design
+24. CompletableFuture chaining
+25. Parallel file processing
+26. Order pipeline system
+27. CyclicBarrier usage
+28. CountDownLatch coordination
+29. Scheduler design
+30. Async logging system
+
+
+====================================================
+🧠 2. Real Interview Coding Questions
+====================================================
+
+1. Thread-safe LRU Cache
+2. Producer–Consumer bounded queue
+3. Print sequence using 3 threads
+4. Rate limiter implementation
+5. Thread-safe Singleton
+6. Custom thread pool
+7. Deadlock detection/fix
+8. Async pipeline system
+
+
+====================================================
+🏗️ 3. System Design (Threading Based)
+====================================================
+
+1. Web server (Tomcat-like)
+2. File processing system
+3. Message queue (Kafka-like)
+4. Notification system
+5. Rate limiter
+6. Order processing system
+7. Async logging system
+
+
+====================================================
+⚙️ 4. How JVM schedules threads
+====================================================
+
+- JVM does NOT schedule threads directly
+- OS scheduler handles thread execution
+- Java threads map to native OS threads
+- Time slicing + preemptive scheduling
+- Priority is only a hint
+
+
+====================================================
+🔒 5. ReentrantLock internal working
+====================================================
+
+- Built on AbstractQueuedSynchronizer (AQS)
+- Uses CAS (Compare-And-Swap)
+- If lock free → thread acquires
+- If locked → enters FIFO queue
+- Uses park/unpark for blocking
+- Supports fairness + reentrancy
+
+
+====================================================
+🔄 6. Context Switching
+====================================================
+
+Steps:
+1. Save current thread state
+2. Store in Thread Control Block
+3. Load next thread state
+4. Resume execution
+
+Cost:
+- CPU overhead
+- Cache disruption
+- Performance impact
